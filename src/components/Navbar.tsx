@@ -18,7 +18,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-army-panel bg-opacity-80 backdrop-blur-sm border-b border-army-border">
       <nav className="max-w-7xl mx-auto flex items-center justify-between p-4">
         <a href="#home" className="text-2xl font-bold text-army-gold hover:text-army-gold-hover transition-colors">
-          Sam's British Army
+          Sam's BA
         </a>
         <div className="lg:hidden">
           <button onClick={() => setOpen(!open)} aria-label="Toggle menu" className="text-army-gold hover:text-army-gold-hover">

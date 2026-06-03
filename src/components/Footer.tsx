@@ -47,7 +47,7 @@ export default function Footer() {
             <div className="flex items-center space-x-2">
               <Shield className="h-6 w-6 text-army-gold" />
               <span className="font-sans font-extrabold tracking-wider text-lg uppercase text-white">
-                SAM'S BRITISH ARMY
+                SAM'S BA
               </span>
             </div>
             <p className="text-gray-400 text-sm max-w-md leading-relaxed">
