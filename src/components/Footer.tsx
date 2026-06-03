@@ -36,7 +36,7 @@ const XIcon = ({ className }: { className?: string }) => (
 
 export default function Footer() {
   return (
-    <footer className="bg-army-dark border-t border-army-border relative overflow-hidden">
+    <footer id="footer" className="bg-army-dark border-t border-army-border relative overflow-hidden">
       {/* Background Decorative Grid */}
       <div className="absolute inset-0 tactical-grid pointer-events-none opacity-20" />
 
