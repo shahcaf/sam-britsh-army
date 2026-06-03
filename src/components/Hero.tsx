@@ -46,7 +46,7 @@ export default function Hero() {
       {/* Background image with color burn/overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-45 mix-blend-luminosity scale-105"
-        style={{ backgroundImage: "url('/images/hero_banner.png')" }}
+        style={{ backgroundImage: "url('/sam-britsh-army/images/hero_banner.png')" }}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-army-dark via-army-dark/80 to-transparent" />
 
