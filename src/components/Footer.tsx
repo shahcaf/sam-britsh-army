@@ -1,4 +1,4 @@
-import { Shield, MessageSquare, Users } from "lucide-react";
+import { MessageSquare } from "lucide-react";
 
 // Custom TikTok icon since Lucide doesn't have it by default
 const TikTokIcon = ({ className }: { className?: string }) => (
@@ -44,8 +44,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand Column */}
           <div className="md:col-span-2 space-y-4">
-            <div className="flex items-center space-x-2">
-              <Shield className="h-6 w-6 text-army-gold" />
+            <div className="flex items-center space-x-3">
+              <img src="/sam-britsh-army/images/sba_logo.png" alt="SBA Logo" className="h-9 w-9 object-contain rounded-full border border-army-border" />
               <span className="font-sans font-extrabold tracking-wider text-lg uppercase text-white">
                 SAM'S BA
               </span>
