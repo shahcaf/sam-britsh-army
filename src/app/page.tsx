@@ -2,7 +2,6 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import SocialPlatforms from "@/components/SocialPlatforms";
-import Timeline from "@/components/Timeline";
 import Gallery from "@/components/Gallery";
 import Testimonials from "@/components/Testimonials";
 import Recruitment from "@/components/Recruitment";
@@ -22,7 +21,6 @@ export default function Home() {
         <Hero />
         <About />
         <SocialPlatforms />
-        <Timeline />
         <Gallery />
         <Testimonials />
         <Recruitment />

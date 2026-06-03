@@ -115,11 +115,7 @@ export default function Footer() {
                   Social Channels
                 </a>
               </li>
-              <li>
-                <a href="#timeline" className="hover:text-army-gold transition-colors">
-                  Timeline
-                </a>
-              </li>
+
               <li>
                 <a href="#gallery" className="hover:text-army-gold transition-colors">
                   Operations
