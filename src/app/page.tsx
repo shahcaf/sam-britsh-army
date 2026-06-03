@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Stats from "@/components/Stats";
 import SocialPlatforms from "@/components/SocialPlatforms";
 import Timeline from "@/components/Timeline";
 import Gallery from "@/components/Gallery";
@@ -22,7 +21,6 @@ export default function Home() {
       <main className="flex-grow z-10 relative">
         <Hero />
         <About />
-        <Stats />
         <SocialPlatforms />
         <Timeline />
         <Gallery />
