@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --background: #070a13;
+  --foreground: #f3f4f6;
+  --army-gold: #c5a059;
+  --army-gold-hover: #d4af37;
+  --army-gold-glow: rgba(197, 160, 89, 0.3);
+  --font-geist-sans: var(--font-geist-sans);
+  --font-geist-mono: var(--font-geist-mono);
+}
+
+@theme {
+  --color-army-gold: var(--army-gold);
+  --color-army-gold-hover: var(--army-gold-hover);
+  --color-army-dark: #070a13;
+  --color-army-panel: #0c1020;
+  --color-army-panel-hover: #12182e;
+  --color-army-green: #1a231d;
+  --color-army-border: rgba(197, 160, 89, 0.15);
+  --color-army-border-active: rgba(197, 160, 89, 0.45);
+  --color-army-text-muted: #9ca3af;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+/* Custom Tactical Background Pattern */
+.tactical-grid {
+  background-image: 
+    linear-gradient(rgba(197, 160, 89, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(197, 160, 89, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Radar Sweep Scan Animation */
+@keyframes radar-sweep {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.radar-sweep-effect {
+  animation: radar-sweep 16s linear infinite;
+}
+
+/* Custom glow utility */
+.gold-glow {
+  box-shadow: 0 0 15px rgba(197, 160, 89, 0.1);
+}
+.gold-glow-hover {
+  transition: all 0.3s ease;
+}
+.gold-glow-hover:hover {
+  box-shadow: 0 0 25px rgba(197, 160, 89, 0.25);
+}
+
+/* Military stencil style borders */
+.tactical-border {
+  border: 1px solid rgba(197, 160, 89, 0.15);
+  position: relative;
+}
+
+.tactical-corner {
+  position: relative;
+}
+.tactical-corner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid var(--army-gold);
+  border-left: 2px solid var(--army-gold);
+  pointer-events: none;
+}
+.tactical-corner::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid var(--army-gold);
+  border-right: 2px solid var(--army-gold);
+  pointer-events: none;
+}
+
+/* Corner decoration variations */
+.tactical-corner-tr {
+  position: relative;
+}
+.tactical-corner-tr::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid var(--army-gold);
+  border-right: 2px solid var(--army-gold);
+  pointer-events: none;
+}
+
+.tactical-corner-bl {
+  position: relative;
+}
+.tactical-corner-bl::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid var(--army-gold);
+  border-left: 2px solid var(--army-gold);
+  pointer-events: none;
+}
+
+/* Glowing dot overlay */
+.military-glow-dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--army-gold);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--army-gold);
+  display: inline-block;
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
